@@ -1,5 +1,5 @@
 public class Task2 {
-    public static String Rot13(String s) {
+    public static String rot13(String s) {
         String result = "";
 
         for (int i = 0; i < s.length(); ++i) {
