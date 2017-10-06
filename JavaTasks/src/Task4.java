@@ -1,14 +1,13 @@
-
-import java.io.BufferedReader;
-import java.io.FileInputStream;
 import java.nio.file.*;
-import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.stream.*;
 import java.util.stream.Stream;
 
 public class Task4 {
+    //First argument - file to read input from
+    //Second - type of stream
     public static void main(String[] args) {
+        //Example of usage
         if (args.length != 2) {
             System.err.println("Usage: program \"filename\" \"int|double|word|line\"");
             return;

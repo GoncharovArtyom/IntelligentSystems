@@ -1,4 +1,5 @@
 public class Task2 {
+    //Rot13 coding/encoding algorithm
     public static String rot13(String s) {
         String result = "";
 
