@@ -8,8 +8,8 @@ public class Task10 {
 
         ArrayList<Character> charList = new ArrayList<>();
 
-        long p = 200;
-        long x0 = 50;
+        long p = 223923759023L;
+        long x0 = 101;
         long x = 1;
         //polynomial hash functions
         long hash1 = 0;
@@ -47,7 +47,7 @@ public class Task10 {
                         System.out.println(false);
                     }
                 } else{
-                    x = (x*x0);
+                    x = (x*x0)%p;
                     //O(1)
                     hash1 = (hash1 + (charList.get(len/2-1)*x)%p)%p;
                     hash2 = ((hash2*x0)%p + c)%p;
