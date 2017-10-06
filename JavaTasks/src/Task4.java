@@ -1,7 +1,6 @@
 import java.nio.file.*;
 import java.util.Scanner;
 import java.util.stream.*;
-import java.util.stream.Stream;
 
 public class Task4 {
     //First argument - file to read input from
