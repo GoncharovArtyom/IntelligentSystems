@@ -1,4 +1,10 @@
 public class Task2 {
+    public static void main(String[] args) {
+        String s = "Bc .,kjfnbxlxnKJ";
+        String res = rot13(s);
+        System.out.println(res);
+
+    }
     //Rot13 coding/encoding algorithm
     public static String rot13(String s) {
         String result = "";

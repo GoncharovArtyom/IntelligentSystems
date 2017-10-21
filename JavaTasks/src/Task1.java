@@ -1,6 +1,10 @@
 import java.lang.Math;
 
 public class Task1 {
+    public static void main(String[] args) {
+        System.out.println(gcd3(5, 10));
+    }
+
     public static int gcd1(int a, int b) {
         if (a == 0) {
             return b;
@@ -45,5 +49,41 @@ public class Task1 {
         }
 
         return b;
+    }
+
+    public static int gcd3(int a, int b) {
+        if (a == 0) {
+            return (b > 0) ? b : -b;
+        }
+        if (b == 0) {
+            return (a > 0) ? a : -a;
+        }
+
+        int r = remainder(a, b);
+        while (r != 0) {
+            a = b;
+            b = r;
+            r = remainder(a, b);
+        }
+
+        return b;
+    }
+
+    public static int remainder(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("divisor should't be zero");
+        }
+        if (b < 0) {
+            return remainder(a, -b);
+        }
+        if (a < 0) {
+            int r = remainder(-a, b);
+            if (r != 0) {
+                r = b - r;
+            }
+            return r;
+        }
+
+        return a % b;
     }
 }
