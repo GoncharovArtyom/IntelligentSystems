@@ -12,8 +12,8 @@ public class Task1 {
         if (b == 0) {
             return a;
         }
-        a = Math.abs(a);
-        b = Math.abs(b);
+        //a = Math.abs(a);
+        //b = Math.abs(b);
 
         if (b > a) {
             int t = a;
@@ -39,7 +39,7 @@ public class Task1 {
             return a;
         }
 
-        b = Math.abs(b);
+        //b = Math.abs(b);
 
         int r = Math.floorMod(a, b);
         while (r != 0) {
